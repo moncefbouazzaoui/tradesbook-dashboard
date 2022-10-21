@@ -1,0 +1,9 @@
+/build
+/Documentation
+/github-assets
+/.github
+/node_modules
+package-lock.json
+/build
+.vscode
+.eslintcache
