@@ -1,5 +1,6 @@
 
 import Dashboard from "views/Dashboard.js";
+import BackTest from "views/BackTest.js";
 import Icons from "views/Icons.js";
 import Map from "views/Map.js";
 import Notifications from "views/Notifications.js";
@@ -15,6 +16,14 @@ var routes = [
     rtlName: "لوحة القيادة",
     icon: "tim-icons icon-chart-pie-36",
     component: Dashboard,
+    layout: "/admin"
+  },
+  {
+    path: "/backtest",
+    name: "Backtest",
+    rtlName: "لوحة القيادة",
+    icon: "tim-icons icon-components",
+    component: BackTest,
     layout: "/admin"
   },
   {

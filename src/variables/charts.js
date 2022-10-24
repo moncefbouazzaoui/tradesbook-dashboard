@@ -6,8 +6,10 @@
 // chartExample1 and chartExample2 options
 let chart1_2_options = {
   maintainAspectRatio: false,
-  legend: {
-    display: false
+  plugins: {
+    legend: {
+      display: false
+    }
   },
   tooltips: {
     backgroundColor: "#f5f5f5",
@@ -90,14 +92,16 @@ let chartExample1 = {
           borderColor: "#1f8ef1",
           borderWidth: 2,
           borderDash: [],
+          borderRadius: 4,
           borderDashOffset: 0.0,
           pointBackgroundColor: "#1f8ef1",
           pointBorderColor: "rgba(255,255,255,0)",
           pointHoverBackgroundColor: "#1f8ef1",
-          pointBorderWidth: 20,
+          pointBorderWidth: 1,
           pointHoverRadius: 4,
           pointHoverBorderWidth: 15,
-          pointRadius: 4,
+          pointRadius: 1,
+          tension: 0.3,
           data: [100, 70, 90, 70, 85, 60, 75, 60, 90, 80, 110, 100]
         }
       ]
@@ -213,7 +217,8 @@ let chartExample2 = {
       labels: ["JUL", "AUG", "SEP", "OCT", "NOV", "DEC"],
       datasets: [
         {
-          label: "Data",
+          label: "",
+          display: false,
           fill: true,
           backgroundColor: gradientStroke,
           borderColor: "#1f8ef1",
